@@ -3,153 +3,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Footer EL_MOVIE</title>
+  <title>Footer Example</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #fff;
+      background: #fceaea;
     }
 
     footer {
-      background-color: #fff;
+      background: #fff;
       padding: 40px 60px;
-      border-top: 2px solid #f1f1f1;
-    }
-
-    .footer-container {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 30px;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
     }
 
-    .footer-section {
+    .footer-col {
       flex: 1;
       min-width: 200px;
+      margin: 10px;
     }
 
-    .footer-section h2 {
-      margin-bottom: 12px;
+    .footer-logo img {
+      width: 120px; /* ukuran logo */
+      margin-bottom: 10px;
     }
 
-    .footer-section h4 {
-      margin-bottom: 12px;
-      font-size: 16px;
-      font-weight: bold;
-    }
-
-    .footer-section p {
-      font-size: 14px;
-      line-height: 1.6;
-      color: #555;
-    }
-
-    .footer-section ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .footer-section ul li {
-      margin-bottom: 8px;
-    }
-
-    .footer-section ul li a {
-      text-decoration: none;
+    .footer-logo p {
       font-size: 14px;
       color: #333;
-      transition: color 0.3s;
-    }
-
-    .footer-section ul li a:hover {
-      color: #e50914;
+      margin-bottom: 15px;
     }
 
     .store-buttons img {
-      width: 140px;
-      margin: 8px 5px 0 0;
+      width: 130px;
+      margin-right: 8px;
       cursor: pointer;
     }
 
-    .social-icons {
-      display: flex;
-      gap: 10px;
-      margin-top: 5px;
+    .footer-col h4 {
+      font-size: 16px;
+      margin-bottom: 12px;
+      color: #111;
     }
 
-    .social-icons img {
-      width: 25px;
-      height: 25px;
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
     }
 
-    .copyright {
+    .footer-col ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-col ul li a {
+      text-decoration: none;
+      font-size: 14px;
+      color: #444;
+      transition: color 0.3s;
+    }
+
+    .footer-col ul li a:hover {
+      color: crimson;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 12px;
+      font-size: 18px;
+      color: #444;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: crimson;
+    }
+
+    /* Bagian paling bawah */
+    .footer-bottom {
+      background: #fff;
       text-align: center;
-      margin-top: 30px;
+      padding: 15px;
       font-size: 13px;
       color: #444;
-    }
-
-    .Logo footer {
-        width: 50%;
+      border-top: 1px solid #ddd; /* pembatas tipis */
     }
   </style>
 </head>
 <body>
 
   <footer>
-    <div class="footer-container">
-      
-      <!-- Kiri -->
-      <div class="footer-section">
-        <img src="/asset/logo putih.png" alt="logo El_Movie" class="Logo Footer">
-        <p>Download aplikasi EL Movie dan dapatkan akses hiburan kapanpun!</p>
-        <div class="store-buttons">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
-          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
-        </div>
+    <!-- Kolom Logo & Download -->
+    <div class="footer-col footer-logo">
+      <img src="/asset/logo putih.png" alt="EL Movie"> <!-- Ganti dengan logo asli -->
+      <p>Download aplikasi EL Movie dan dapatkan akses hiburan tanpa batas!</p>
+      <div class="store-buttons">
+        <img src="google-play.png" alt="Google Play">
+        <img src="app-store.png" alt="App Store">
       </div>
-
-      <!-- Kategori Cepat -->
-      <div class="footer-section">
-        <h4>Kategori Cepat</h4>
-        <ul>
-          <li><a href="#">Terbaru</a></li>
-          <li><a href="#">Film Populer</a></li>
-          <li><a href="#">Genre</a></li>
-          <li><a href="#">Coming Soon</a></li>
-          <li><a href="#">Rekomendasi</a></li>
-        </ul>
-      </div>
-
-      <!-- Sosial Media -->
-      <div class="footer-section">
-        <h4>Sosial Media</h4>
-        <div class="social-icons">
-          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="Facebook"></a>
-          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="YouTube"></a>
-          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174876.png" alt="Instagram"></a>
-          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
-        </div>
-      </div>
-
-      <!-- Info Tambahan -->
-      <div class="footer-section">
-        <h4>Info Tambahan</h4>
-        <ul>
-          <li><a href="#">Kebijakan Privasi</a></li>
-          <li><a href="#">Syarat & Ketentuan</a></li>
-          <li><a href="#">Kontak Kami</a></li>
-          <li><a href="#">Bantuan</a></li>
-        </ul>
-      </div>
-
     </div>
 
-    <div class="copyright">
-      <p>Luchime_Banza</p>
+    <!-- Kolom Navigasi -->
+    <div class="footer-col">
+      <h4>Navigasi Cepat</h4>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Film Populer</a></li>
+        <li><a href="#">Genre</a></li>
+        <li><a href="#">Coming Soon</a></li>
+        <li><a href="#">Rekomendasi</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom Social Media -->
+    <div class="footer-col">
+      <h4>Social Media</h4>
+      <div class="social-icons">
+        <a href="#">📘</a>
+        <a href="#">📷</a>
+        <a href="#">▶️</a>
+        <a href="#">🐦</a>
+      </div>
+    </div>
+
+    <!-- Kolom Info Tambahan -->
+    <div class="footer-col">
+      <h4>Info Tambahan</h4>
+      <ul>
+        <li><a href="#">Kebijakan Privasi</a></li>
+        <li><a href="#">Syarat & Ketentuan</a></li>
+        <li><a href="#">Copyright</a></li>
+        <li><a href="#">Disclaimer</a></li>
+      </ul>
     </div>
   </footer>
+
+  <!-- Bagian bawah credit -->
+  <div class="footer-bottom">
+    Lucinee_Elaraa
+  </div>
 
 </body>
 </html>
