@@ -3,150 +3,165 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Footer Example</title>
+  <title>Footer El_Movie</title>
+  <!-- Link Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #fceaea;
+      margin: 0;
+      background-color: #fcecec;
     }
 
-    footer {
+    .footer {
       background: #fff;
-      padding: 40px 60px;
+      padding: 30px 50px;
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
       flex-wrap: wrap;
-      box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+      flex-direction: row;
     }
 
-    .footer-col {
-      flex: 1;
-      min-width: 200px;
-      margin: 10px;
-    }
-
-    .footer-logo img {
-      width: 120px; /* ukuran logo */
+    /* Logo Teks */
+    .logo-text {
+      font-size: 28px;
+      font-weight: bold;
+      font-family: 'Georgia', serif;
       margin-bottom: 10px;
     }
 
-    .footer-logo p {
-      font-size: 14px;
-      color: #333;
-      margin-bottom: 15px;
+    .logo-text .el {
+      color: red;
     }
 
-    .store-buttons img {
-      width: 130px;
-      margin-right: 8px;
+    .logo-text .movie {
+      color: black;
+    }
+
+    .footer .logo-section {
+      max-width: 250px;
+    }
+
+    .footer .logo-section p {
+      font-size: 14px;
+      margin: 10px 0;
+    }
+
+    .footer .store-buttons img {
+      width: 120px;
+      margin: 5px 0;
       cursor: pointer;
     }
 
-    .footer-col h4 {
-      font-size: 16px;
-      margin-bottom: 12px;
-      color: #111;
+    .footer .column {
+      min-width: 150px;
     }
 
-    .footer-col ul {
+    .footer .column h4 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .footer .column ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
 
-    .footer-col ul li {
-      margin-bottom: 8px;
+    .footer .column ul li {
+      margin: 6px 0;
     }
 
-    .footer-col ul li a {
+    .footer .column ul li a {
       text-decoration: none;
+      color: #000;
       font-size: 14px;
-      color: #444;
-      transition: color 0.3s;
     }
 
-    .footer-col ul li a:hover {
-      color: crimson;
+    .footer .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-top: 5px;
+      font-size: 24px;
     }
 
-    .social-icons a {
-      display: inline-block;
-      margin-right: 12px;
-      font-size: 18px;
-      color: #444;
-      text-decoration: none;
-      transition: color 0.3s;
+    .footer .social-icons a {
+      color: #000;
+      transition: 0.3s;
     }
 
-    .social-icons a:hover {
-      color: crimson;
+    .footer .social-icons a:hover {
+      color: red;
     }
 
-    /* Bagian paling bawah */
+    /* Bagian bawah di dalam box putih */
     .footer-bottom {
-      background: #fff;
+      width: 100%;
       text-align: center;
-      padding: 15px;
-      font-size: 13px;
-      color: #444;
-      border-top: 1px solid #ddd; /* pembatas tipis */
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 1px solid #ddd;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-
+  
   <footer>
-    <div class="footer-col footer-logo">
-      <img src="/asset/logo putih.png" alt="EL Movie">
-      <p>Download aplikasi EL Movie dan dapatkan akses hiburan tanpa batas!</p>
-      <div class="store-buttons">
-        <img src="/asset/logo google play.png" alt="Google Play">
-        <img src="/asset/logo apple.png" alt="App Store">
+    <div class="footer">
+      <!-- Bagian Kiri Logo -->
+      <div class="logo-section">
+        <div class="logo-text">
+          <span class="el">El</span><span class="movie"> Movie</span>
+        </div>
+        <p>Download aplikasi El_Movie dan dapatkan akses hiburan kapan pun !</p>
+        <div class="store-buttons">
+          <img src="googleplay.png" alt="Google Play">
+          <img src="appstore.png" alt="App Store">
+        </div>
       </div>
-    </div>
 
-    <!-- Kolom Navigasi -->
-    <div class="footer-col">
-      <h4>Navigasi Cepat</h4>
-      <ul>
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#">Film Populer</a></li>
-        <li><a href="#">Genre</a></li>
-        <li><a href="#">Coming Soon</a></li>
-        <li><a href="#">Rekomendasi</a></li>
-      </ul>
-    </div>
-
-    <!-- Kolom Social Media -->
-    <div class="footer-col">
-      <h4>Social Media</h4>
-      <div class="social-icons">
-        <img src="/asset/logo instagram.png" alt="">
-        <img src="/asset/logo youtube.png" alt="">
-        <img src="/asset/logo facebook.png" alt="">
-        <a href="#">📘</a>
-        <a href="#">📷</a>
-        <a href="#">▶️</a>
-        <a href="#">🐦</a>
+      <!-- Navigasi Cepat -->
+      <div class="column">
+        <h4>Navigasi Cepat</h4>
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Film Populer</a></li>
+          <li><a href="#">Genre</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Rekomendasi</a></li>
+        </ul>
       </div>
-    </div>
 
-    <!-- Kolom Info Tambahan -->
-    <div class="footer-col">
-      <h4>Info Tambahan</h4>
-      <ul>
-        <li><a href="#">Kebijakan Privasi</a></li>
-        <li><a href="#">Syarat & Ketentuan</a></li>
-        <li><a href="#">Copyright</a></li>
-        <li><a href="#">Disclaimer</a></li>
-      </ul>
+      <!-- Sosial Media -->
+      <div class="column">
+        <h4>Sosial Media</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <!-- Info Tambahan -->
+      <div class="column">
+        <h4>Info Tambahan</h4>
+        <ul>
+          <li><a href="#">Kebijakan Privasi</a></li>
+          <li><a href="#">Syarat & Ketentuan</a></li>
+          <li><a href="#">Copyright</a></li>
+          <li><a href="#">Disclaimer</a></li>
+        </ul>
+      </div>
+
+      <!-- Bagian Bawah sekarang di dalam footer -->
+      <div class="footer-bottom">
+        Lucinee_Elaraa
+      </div>
     </div>
   </footer>
-
-  <!-- Bagian bawah credit -->
-  <div class="footer-bottom">
-    Lucinee_Elaraa
-  </div>
 
 </body>
 </html>
